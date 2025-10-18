@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Generador PRO — Chaleco 2D</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="controls">
+    <h1>Generador PRO — Chaleco (Hombre & Mujer)</h1>
+    <p class="desc">Introduce las medidas y genera automáticamente el patrón técnico en 2D.</p>
+
+    <label>Tipo de patrón</label>
+    <select id="tipo">
+      <option value="hombre">Chaleco de Hombre</option>
+      <option value="mujer">Chaleco de Mujer (entallado con pinzas)</option>
+    </select>
+
+    <div class="inputs">
+      <label>Contorno pecho</label><input id="pecho" type="number" value="100">
+      <label>Contorno cintura</label><input id="cintura" type="number" value="90">
+      <label>Ancho espalda</label><input id="espalda" type="number" value="42">
+      <label>Ancho hombros</label><input id="hombros" type="number" value="46">
+      <label>Largo total</label><input id="largo" type="number" value="60">
+      <label>Altura de busto (solo mujer)</label><input id="busto" type="number" value="25">
+    </div>
+
+    <div class="actions">
+      <button id="exportSvg">Exportar SVG</button>
+      <button id="exportPng">Exportar PNG</button>
+    </div>
+  </div>
+
+  <div class="canvas-container">
+    <canvas id="patron"></canvas>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/p5@1.9.0/lib/p5.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
