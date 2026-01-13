@@ -2,108 +2,73 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- SEO -->
-  <title>Se vende Tesla Model 3 2019 Long Range AWD | 23.000€</title>
-  <meta name="description" content="Se vende Tesla Model 3 Long Range AWD 2019. Dual Motor, 140.000 km, FSD, sonido premium, color azul. Precio 23.000€." />
-  <meta name="keywords" content="Tesla Model 3, Tesla azul, Tesla Long Range AWD, Tesla FSD, coche eléctrico en venta" />
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Tesla Model 3 2019 Long Range AWD</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <div class="language-picker">
+    <button onclick="changeLanguage('es')" id="btn-es" class="lang-btn">ES</button>
+    <button onclick="changeLanguage('en')" id="btn-en" class="lang-btn">EN</button>
+  </div>
+
   <header class="hero">
-    <h1>Se vende Tesla Model 3</h1>
-    <p class="hero-sub">Long Range AWD · 2019 · Dual Motor</p>
+    <div class="badge-large" data-section="hero" data-value="badge">OPORTUNIDAD</div>
+    <h1 data-section="hero" data-value="title">Tesla Model 3</h1>
+    <p class="hero-sub" data-section="hero" data-value="subtitle">Long Range AWD · 2019</p>
   </header>
 
   <main class="container">
 
     <section class="card fade-in">
-      <h2>Descripción</h2>
-      <p>
-        Tesla Model 3 Long Range AWD (Dual Motor) del año 2019, en color azul.
-        Vehículo muy cuidado, con aproximadamente <strong>140.000 km</strong> y en perfecto estado de funcionamiento.
-      </p>
-      <p>
-        Incluye prácticamente todos los extras disponibles en su configuración,
-        destacando el <strong>sonido premium</strong> y el <strong>Full Self‑Driving (FSD)</strong>.
-      </p>
-      <p class="price-inline">
-        <strong>Precio:</strong> <span>23.000 €</span> · Escucho ofertas razonables
-      </p>
-    </section>
-
-    <section class="card fade-in spec">
-      <h2>Ficha técnica</h2>
-      <ul class="spec-grid">
-        <li><span>Año</span><strong>2019</strong></li>
-        <li><span>Kilómetros</span><strong>~140.000 km</strong></li>
-        <li><span>Tracción</span><strong>AWD (Dual Motor)</strong></li>
-        <li><span>Batería</span><strong>Long Range (75kw)</strong></li>
-        <li><span>Color</span><strong>Azul</strong></li>
-        <li><span>Autonomía</span><strong>450 km aprox</strong></li>
-        <li><span>Sonido</span><strong>Premium</strong></li>
-        <li><span>FSD</span><strong>Incluido</strong></li>
-        <li class="price-box"><span>Precio</span><strong>23.000 €</strong></li>
-      </ul>
-    </section>
-
-    <section class="card fade-in">
-      <h2>Fotos</h2>
-      <div class="gallery">
-        <img src="img/tesla (1).jpg" alt="Tesla Model 3 azul exterior" />
-        <img src="img/tesla (2).jpg" alt="Tesla Model 3 interior" />
-        <img src="img/tesla (3).jpg" alt="Tesla Model 3 pantalla" />
-        
-
-        <img src="img/tesla (5).jpg" alt="Tesla Model 3 azul exterior" />
-        <img src="img/tesla (6).jpg" alt="Tesla Model 3 interior" />
-        <img src="img/tesla (7).jpg" alt="Tesla Model 3 pantalla" />
-        <img src="img/tesla (8).jpg" alt="Tesla Model 3 trasera" />
-
-        <img src="img/tesla (9).jpg" alt="Tesla Model 3 azul exterior" />
-        <img src="img/tesla (10).jpg" alt="Tesla Model 3 interior" />
-        <img src="img/tesla (11).jpg" alt="Tesla Model 3 pantalla" />
-        <img src="img/tesla (12).jpg" alt="Tesla Model 3 trasera" />
-
-        <img src="img/tesla (13).jpg" alt="Tesla Model 3 azul exterior" />
-        <img src="img/tesla (14).jpg" alt="Tesla Model 3 interior" />
-   
-        <img src="img/tesla (19).jpg" alt="Tesla Model 3 pantalla" />
-        <img src="img/tesla (20).jpg" alt="Tesla Model 3 trasera" />
-        
-      
+      <h2 data-section="description" data-value="title">Descripción</h2>
+      <p data-section="description" data-value="p1">Tesla Model 3 Long Range AWD (Dual Motor) del año 2019, en color azul metálico. Vehículo muy cuidado, con aproximadamente 140.000 km.</p>
+      <div class="price-tag">
+        <strong data-section="description" data-value="priceText">Precio:</strong> 
+        <span>23.000 €</span>
       </div>
     </section>
 
+    <section class="card fade-in spec">
+      <h2 data-section="specs" data-value="title">Ficha técnica</h2>
+      <ul class="spec-grid" id="spec-grid">
+        </ul>
+    </section>
+
     <section class="card fade-in">
-      <h2>Contacto</h2>
+      <h2 data-section="gallery" data-value="title">Galería</h2>
+      <div class="gallery">
+        <img src="img/tesla (14).jpg" alt="Tesla">
+        <img src="img/tesla (5).jpg" alt="Tesla">
+        <img src="img/tesla (6).jpg" alt="Tesla">
+        <img src="img/tesla (7).jpg" alt="Tesla">
+        <img src="img/tesla (9).jpg" alt="Tesla">
+        <img src="img/tesla (10).jpg" alt="Tesla">
+        <img src="img/tesla (11).jpg" alt="Tesla">
+      </div>
+      <p class="scroll-hint">← Desliza para ver más →</p>
+    </section>
+
+    <section class="card fade-in">
+      <h2 data-section="contact" data-value="title">Contacto</h2>
       <form action="https://formspree.io/f/mreezqwb" method="POST">
-        <input type="text" name="name" placeholder="Nombre" required>
-
-        <input type="email" name="_replyto" placeholder="Email" required>
-
-        <input type="text" name="phone" placeholder="Teléfono (opcional)">
-
-        <textarea name="message" placeholder="Mensaje u oferta (€)"></textarea>
-
-        <button type="submit">Contactar</button>
+        <input type="text" name="name" id="form-name" placeholder="Nombre" required>
+        <input type="email" name="_replyto" id="form-email" placeholder="Email" required>
+        <textarea name="message" id="form-msg" placeholder="Mensaje u oferta"></textarea>
+        <button type="submit" id="form-btn">Enviar</button>
       </form>
-
-      <p class="form-note">Te responderé lo antes posible.</p>
     </section>
 
   </main>
 
   <footer>
-    © 2026 · Venta particular Tesla Model 3
+    <p>© 2026 · Tesla Model 3 Long Range</p>
   </footer>
 
-  <!-- Modal imágenes -->
   <div class="modal" id="modal">
-    <img id="modalImg" alt="Imagen ampliada" />
+    <div class="close-modal">&times;</div>
+    <img id="modalImg" alt="Tesla" />
   </div>
 
   <script src="script.js"></script>
